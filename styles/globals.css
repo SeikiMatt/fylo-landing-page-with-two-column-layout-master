@@ -14,6 +14,12 @@
     --neutral-gray: hsl(0, 0%, 75%);
 }
 
+@media screen and (min-width: 600px) {
+    :root {
+        --global-width: 80%;
+    }
+}
+
 html,
 body {
     padding: 0;
@@ -72,4 +78,15 @@ button,
     padding: 14px 16px;
     border: 0;
     border-radius: 3px;
+}
+
+.max-width {
+    max-width: 1440px;
+}
+
+@media screen and (min-width: 600px) {
+    html,
+    body {
+        font-size: 16px;
+    }
 }

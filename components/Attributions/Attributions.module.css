@@ -1,0 +1,17 @@
+.main {
+    font-size: 12px;
+    text-align: center;
+    color: var(--neutral-gray);
+    background-color: var(--primary-dark);
+    height: 2rem;
+}
+
+.main a {
+    transition: color 0.05s;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.main a:hover {
+    color: var(--accent-cyan);
+}

@@ -1,0 +1,53 @@
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5.75rem 32px 6.5rem 32px;
+    text-align: center;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    width: 50%;
+}
+
+.illustration {
+    width: min-content;
+}
+
+.illustration img {
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .main {
+        text-align: left;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .inner {
+        flex-direction: row;
+    }
+
+    .content {
+        height: min-content;
+        padding-right: 3.25rem;
+    }
+
+    .illustration {
+        height: 30vw;
+        max-height: 415px;
+    }
+
+    .illustration img {
+        height: 100%;
+        width: unset;
+    }
+}

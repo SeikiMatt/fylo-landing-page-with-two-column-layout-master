@@ -1,0 +1,30 @@
+.main {
+    padding: 6.5rem 5rem;
+    background-color: var(--primary-dark);
+    color: #fff;
+}
+
+.brand {
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.brand img {
+    height: 2.5rem;
+    filter: brightness(0) invert(1);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 21%;
+}
+
+.column:first-child {
+    width: 37%;
+}
