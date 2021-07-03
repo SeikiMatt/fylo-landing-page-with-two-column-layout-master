@@ -1,0 +1,82 @@
+{
+    "root": true,
+    "extends": "marine/prettier/react",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": false,
+        "codeFrame": false,
+        "project": "./tsconfig.json"
+    },
+    "ignorePatterns": [".next/*", ".vercel/*", ".yarn/*", "node_modules/*"],
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "globals": {
+        "NodeJS": "readonly",
+        "JSX": "readonly"
+    },
+    "rules": {
+        "@typescript-eslint/explicit-member-accessibility": 0,
+        "@typescript-eslint/indent": 0,
+        "@typescript-eslint/naming-convention": 0,
+        "@typescript-eslint/no-extraneous-class": 0,
+        "@typescript-eslint/no-floating-promises": 0,
+        "@typescript-eslint/no-non-null-assertion": 0,
+        "@typescript-eslint/no-unnecessary-condition": 0,
+        "@typescript-eslint/no-useless-constructor": 0,
+        "@typescript-eslint/space-before-function-paren": 0,
+        "no-implicit-coercion": 0,
+        "no-negated-condition": 0,
+        "no-undef": 0,
+        "no-unused-vars": 0,
+        "no-use-before-define": 0,
+        "no-useless-constructor": 0,
+        "prettier/prettier": [
+            2,
+            {
+                "printWidth": 100,
+                "trailingComma": "all",
+                "useTabs": false,
+                "tabWidth": 4,
+                "semi": true,
+                "singleQuote": true,
+                "jsxSingleQuote": true,
+                "endOfLine": "lf",
+
+                "overrides": [
+                    {
+                        "files": "*.json",
+                        "options": {
+                            "printWidth": 200
+                        }
+                    }
+                ]
+            }
+        ],
+        "react/jsx-filename-extension": [
+            2,
+            {
+                "extensions": [".tsx"]
+            }
+        ],
+        "react/react-in-jsx-scope": 0,
+        "spaced-comment": [
+            1,
+            "always",
+            {
+                "line": {
+                    "markers": ["#region", "#endregion", "region", "endregion", "/"]
+                }
+            }
+        ],
+        "sort-imports": 0,
+        "sort-keys": 0,
+        "sort-vars": 2
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
