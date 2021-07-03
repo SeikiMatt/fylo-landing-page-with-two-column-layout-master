@@ -1,10 +1,10 @@
 @import url('./normalize.css');
 
 :root {
+    --page-max-width: 1440px;
+
     --font-primary: 'Open Sans', sans-serif;
     --font-display: 'Raleway', sans-serif;
-
-    --global-width: 100%;
 
     --primary: hsl(238, 22%, 44%);
     --primary-dark: hsl(243, 87%, 12%);
@@ -12,12 +12,6 @@
     --accent-cyan: hsl(170, 45%, 43%);
     --neutral-gray-blue: #f8f8fe;
     --neutral-gray: hsl(0, 0%, 75%);
-}
-
-@media screen and (min-width: 600px) {
-    :root {
-        --global-width: 80%;
-    }
 }
 
 html,
@@ -81,7 +75,7 @@ button,
 }
 
 .max-width {
-    max-width: 1440px;
+    max-width: var(--page-max-width);
 }
 
 @media screen and (min-width: 600px) {

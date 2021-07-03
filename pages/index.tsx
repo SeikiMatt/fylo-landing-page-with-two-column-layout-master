@@ -20,9 +20,9 @@ export default function Home() {
                 <Header />
                 <Testimonials />
                 <SignUp />
-                <Footer />
-                <Attributions />
             </main>
+            <Footer />
+            <Attributions />
         </>
     );
 }

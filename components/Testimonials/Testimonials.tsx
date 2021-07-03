@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className={`${css.inner} max-width`}>
                     <div className={css.content}>
                         <h1>Stay productive, wherever you are</h1>
-                        <p>
+                        <p className={css.flavorText}>
                             Never let location be an issue when accessing your files. Fylo has you
                             covered for all of your file storage needs.
                             <br />
