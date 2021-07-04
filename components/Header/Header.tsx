@@ -11,8 +11,11 @@ export default function Header() {
                         wherever you need, share and collaborate with friends, family, and
                         co-workers.
                     </p>
-                    <input placeholder='Enter your email...'></input>
-                    <button>Get Started</button>
+                    <input
+                        className='input input-primary'
+                        placeholder='Enter your email...'
+                    ></input>
+                    <button className='button button-primary'>Get Started</button>
                 </div>
                 <div className={css.illustration}>
                     <img src='illustration-1.svg' />

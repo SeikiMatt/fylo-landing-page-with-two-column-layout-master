@@ -13,8 +13,8 @@ export default function SignUp() {
                     </p>
                 </div>
                 <div className={css.form}>
-                    <input placeholder='email@example.com'></input>
-                    <button>Get Started For Free</button>
+                    <input className='shadow' placeholder='email@example.com'></input>
+                    <button className='button button-primary shadow'>Get Started For Free</button>
                 </div>
             </div>
         </section>

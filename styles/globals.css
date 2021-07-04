@@ -9,6 +9,7 @@
     --primary: hsl(238, 22%, 44%);
     --primary-dark: hsl(243, 87%, 12%);
     --accent-blue: hsl(224, 93%, 58%);
+    --accent-blue-lighter: #6b9bff;
     --accent-cyan: hsl(170, 45%, 43%);
     --neutral-gray-blue: #f8f8fe;
     --neutral-gray: hsl(0, 0%, 75%);
@@ -58,20 +59,54 @@ p {
     line-height: 22px;
 }
 
-input {
+input,
+.input,
+button,
+.button {
+    font-size: 0.875rem;
+    letter-spacing: 0.1px;
+    border-radius: 3px;
+}
+
+input,
+.input {
     height: 48px;
     padding: 16px;
     vertical-align: bottom;
+    border: 0;
+}
+
+input::placeholder,
+.input::placeholder {
+    color: var(--neutral-gray);
+}
+
+.input-primary {
+    border: 1px solid var(--primary);
 }
 
 button,
 .button {
-    font-size: 0.875rem;
+    font-family: var(--font-display);
+    font-weight: bold;
     text-align: center;
     height: 48px;
-    padding: 14px 16px;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
     border: 0;
-    border-radius: 3px;
+}
+
+.shadow {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button-primary {
+    background-color: var(--accent-blue);
+    color: #fff;
+}
+
+.button-primary:hover {
+    background-color: var(--accent-blue-lighter);
 }
 
 .max-width {
