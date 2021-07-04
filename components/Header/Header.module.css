@@ -7,6 +7,7 @@
 }
 
 .inner {
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -22,6 +23,11 @@
 }
 
 .illustration img {
+    width: 100%;
+}
+
+.input,
+.button {
     width: 100%;
 }
 
@@ -41,12 +47,29 @@
     }
 
     .illustration {
-        height: 30vw;
-        max-height: 415px;
+        height: clamp(100px, 30vw, 475px);
     }
 
     .illustration img {
+        width: min-content;
         height: 100%;
         width: unset;
+    }
+
+    .title {
+        max-width: 600px;
+    }
+
+    .flavorText {
+        max-width: 575px;
+    }
+
+    .input {
+        max-width: 320px;
+    }
+
+    .button {
+        max-width: 200px;
+        margin-left: 1rem;
     }
 }
