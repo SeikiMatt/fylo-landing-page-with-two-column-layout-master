@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 5.75rem 32px 6.5rem 32px;
+    padding: var(--page-padding);
     text-align: center;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .content {
-    width: 50%;
+    width: 100%;
 }
 
 .illustration {
@@ -44,6 +44,7 @@
 
     .content {
         height: min-content;
+        width: 50%;
     }
 
     .illustration {

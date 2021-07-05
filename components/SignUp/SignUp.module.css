@@ -1,17 +1,17 @@
 .main {
     display: flex;
     justify-content: center;
+    text-align: center;
     width: 100%;
-    padding: 5.75rem 32px 6.5rem 32px;
-
+    padding: var(--page-padding);
     background-color: var(--primary);
     color: #fff;
 }
 
 .inner {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 100%;
 }
 
 .main h2 {
@@ -23,7 +23,7 @@
 }
 
 .content {
-    width: 40%;
+    width: 100%;
 }
 
 .form {
@@ -31,17 +31,39 @@
     flex-direction: column;
     justify-content: center;
     row-gap: 1rem;
-    width: 40%;
+    width: 100%;
 }
 
 .form button {
+    width: 100%;
     white-space: nowrap;
-    width: min-content;
 }
 
 @media screen and (min-width: 600px) {
     .main {
-        padding-left: 5rem;
-        padding-right: 5rem;
+        text-align: left;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .content {
+        width: 40%;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1rem;
+        width: 40%;
+    }
+
+    .form button {
+        width: min-content;
     }
 }

@@ -2,6 +2,7 @@
 
 :root {
     --page-max-width: 1280px;
+    --page-padding: 5.75rem 20px 6.5rem 20px;
 
     --font-primary: 'Open Sans', sans-serif;
     --font-display: 'Raleway', sans-serif;
@@ -15,12 +16,19 @@
     --neutral-gray: hsl(0, 0%, 75%);
 }
 
+@media screen and (min-width: 600px) {
+    :root {
+        --page-padding: 5.75rem 80px 6.5rem 80px;
+    }
+}
+
 html,
 body {
     padding: 0;
     margin: 0;
     font-family: var(--font-primary);
     font-size: 14px;
+    color: var(--primary);
 }
 
 a {
@@ -43,9 +51,9 @@ h6 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: 3.75rem;
+    line-height: 2.25rem;
     margin: 0;
 }
 
@@ -121,5 +129,18 @@ button,
     html,
     body {
         font-size: 16px;
+        color: var(--primary-dark);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 3.75rem;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 }
